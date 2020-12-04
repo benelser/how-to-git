@@ -1,4 +1,11 @@
 # how-to-git
+## SSH
+- Create key rename if desired
+```
+ssh-keygen
+```
+- Copy new key.pub to source control console (github)
+
 ## Pull/Merge Request
 1. git clone desired repo
 ```
