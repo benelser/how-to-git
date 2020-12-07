@@ -6,6 +6,21 @@ ssh-keygen
 ```
 - Copy new key.pub to source control console (github)
 
+## Clone repo With SSH Specific Key
+```
+GIT_SSH_COMMAND="ssh -i ~/.ssh/<PRIVATE_KEY_RSA> -F /dev/null" git clone <GIT_SSH_URI>
+```
+
+## Set core.sshCommand in Git config
+```bash
+# While in directory 
+git config core.sshCommand "ssh -i ~/.ssh/<PRIVATE_KEY_RSA> -F /dev/null"
+# Make changes 
+git add .
+git commit -m "new change"
+git push
+```
+
 ## Pull/Merge Request
 1. git clone desired repo
 ```
