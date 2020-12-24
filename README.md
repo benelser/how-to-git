@@ -50,5 +50,18 @@ git push origin mycool-testing-branch
 7. Create Pull Request
 Go to the browser UI and visit the repo and create pull request from pushes
 
+
+## Create new Repo
+1. Create repo in UI do not initialize or create readme.md
+2. Back on the cli in project folder 
+```bash
+git init
+git add . 
+git commit -m "First commit"
+git remote add origin remote <REPOURL>
+git remote -v 
+git push -u origin master
+```
+
 ## References 
 - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
