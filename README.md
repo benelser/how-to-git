@@ -58,7 +58,7 @@ Go to the browser UI and visit the repo and create pull request from pushes
 git init
 git add . 
 git commit -m "First commit"
-git remote add origin remote <REPOURL>
+git remote add origin <REPOURL>
 git remote -v 
 git push -u origin master
 ```
